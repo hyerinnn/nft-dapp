@@ -5,8 +5,9 @@ pragma solidity >=0.7.0 <0.9.0;
 //erc721에서 util적인 기능이 추가된 타입
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol"; 
 import "@openzeppelin/contracts/utils/Strings.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract MintGemToken is ERC721Enumerable {
+contract MintGemToken is ERC721Enumerable, Ownable {
 
     string public metadataURI;
 
@@ -32,7 +33,7 @@ contract MintGemToken is ERC721Enumerable {
     function mintGemToken() public  {
         uint tokenId = totalSupply() + 1;
 
-        gemTokenData[tokenId] = GemTokenData(1,1);
+        gemTokenData[tokenId] = GemTokenData(1,2);
 
         _mint(msg.sender, tokenId);
     }
