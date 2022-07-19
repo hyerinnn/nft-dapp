@@ -619,11 +619,11 @@
 			]
 		},
 		"contracts/MintGemToken.sol": {
-			"keccak256": "0x3bfe8fbfea939889b1c252c2a9194fc26c80a7de993de736f81e8e548762fb3f",
+			"keccak256": "0xbc02c1d7dd45c0450d43647a2c4922e7112648bbae7027d78308f686387c8540",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ceb4f6fb8b555b62431dfdaa1c442b9c2503a4e80e8a6a50686f37decbb53902",
-				"dweb:/ipfs/QmSoo1TxHE1qPGs71mFKWm9V5EKCqDsSZpF7c59HScw7TJ"
+				"bzz-raw://81cd01910312dfdca0769861fd4ddb1199cfc25877a4737325cb24e397ab7eef",
+				"dweb:/ipfs/QmctAjUqxFGfUegE2T8ETT7sUMw4R2Sj573G5shPVfrA37"
 			]
 		}
 	},
