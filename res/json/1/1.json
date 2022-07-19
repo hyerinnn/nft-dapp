@@ -1,0 +1,16 @@
+{
+    "description": "chr test 1 1",  
+    "image": "https://storage.googleapis.com/opensea-prod.appspot.com/puffs/3.png", 
+    "name": "chr 1 1",
+    "attributes": [
+        {
+            "trait_type" : "Rank",
+            "value": 1
+        },
+        {
+            "trait_type" : "Type",
+            "value": 1
+        }
+
+    ]
+  }
