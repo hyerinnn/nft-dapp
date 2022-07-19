@@ -1,0 +1,16 @@
+{
+    "description": "chr 1 2",  
+    "image": "https://gateway.pinata.cloud/ipfs/QmaBoPnMuQGtjeUvUdMbTpGY8Hs2Nt2a2FFvqAGEo8HZtA/1/2.png", 
+    "name": "chr 1 2",
+    "attributes": [
+        {
+            "trait_type" : "Rank",
+            "value": 1
+        },
+        {
+            "trait_type" : "Type",
+            "value": 2
+        }
+
+    ]
+  }

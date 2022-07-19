@@ -16,6 +16,11 @@
 						"internalType": "string",
 						"name": "_symbol",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_metadataURI",
+						"type": "string"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -137,6 +142,30 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "gemTokenData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "gemTokenRank",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "gemTokenType",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "tokenId",
 						"type": "uint256"
 					}
@@ -171,6 +200,19 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "metadataURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -363,7 +405,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "tokenId",
+						"name": "_tokenId",
 						"type": "uint256"
 					}
 				],
@@ -456,9 +498,6 @@
 				},
 				"tokenOfOwnerByIndex(address,uint256)": {
 					"details": "See {IERC721Enumerable-tokenOfOwnerByIndex}."
-				},
-				"tokenURI(uint256)": {
-					"details": "See {IERC721Metadata-tokenURI}."
 				},
 				"totalSupply()": {
 					"details": "See {IERC721Enumerable-totalSupply}."
@@ -580,11 +619,11 @@
 			]
 		},
 		"contracts/MintGemToken.sol": {
-			"keccak256": "0xe7256158647718b0c705f86cbd36921d5ecd9b7558d91a18ff646ac923b82835",
+			"keccak256": "0x3bfe8fbfea939889b1c252c2a9194fc26c80a7de993de736f81e8e548762fb3f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0949e0eb388759d4e91c8887fa2942aeb93307ce9be555e4f2121a26663313f0",
-				"dweb:/ipfs/QmNr8cBpKoeDBqCnMyrGwvpwsV8RutqbJq5PKgdceQF4cE"
+				"bzz-raw://ceb4f6fb8b555b62431dfdaa1c442b9c2503a4e80e8a6a50686f37decbb53902",
+				"dweb:/ipfs/QmSoo1TxHE1qPGs71mFKWm9V5EKCqDsSZpF7c59HScw7TJ"
 			]
 		}
 	},
