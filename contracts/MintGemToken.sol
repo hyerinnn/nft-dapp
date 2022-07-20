@@ -33,8 +33,23 @@ contract MintGemToken is ERC721Enumerable, Ownable {
     function mintGemToken() public  {
         uint tokenId = totalSupply() + 1;
 
-        gemTokenData[tokenId] = GemTokenData(1,2);
+       GemTokenData memory randomTokenData = randomGenerator(msg.sender, tokenId);
+
+        gemTokenData[tokenId] = GemTokenData(randomTokenData.gemTokenRank, randomTokenData.gemTokenType);
+
+        //gemTokenData[tokenId] = GemTokenData(1,2);
 
         _mint(msg.sender, tokenId);
     }
+
+    function randomGenerator(address _msgSender, uint _tokenId) private view returns(GemTokenData memory){
+        uint randomNum = uint(keccak256(abi.encodePacked(blockhash(block.timestamp), _msgSender, _tokenId))) % 100;
+
+        GemTokenData memory randomTokenData;
+
+        if(randomNum < 5) {
+            // 예정
+        }
+    }
+
 }
