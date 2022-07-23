@@ -182,6 +182,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "gemTokenPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -241,7 +254,7 @@
 				"inputs": [],
 				"name": "mintGemToken",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -688,11 +701,11 @@
 			]
 		},
 		"contracts/MintGemToken.sol": {
-			"keccak256": "0xf4a832f8d5fc09b6e4dec8892b289e1f8f5b45b555081c1efe4512f39c8603f5",
+			"keccak256": "0xbb01f489ba55dd2ed4043c40dd630106cc5ba378b330340ac927d8cd6e900183",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://16c22ee268b2baaed84a880433c0de31e8102ddf31a7cf01515aa75ac0fe2ec9",
-				"dweb:/ipfs/QmdtPMkPfnJSDrXfnvHb1SVT9CwHtKTsRpbZkVCQ6B2XCA"
+				"bzz-raw://5bde3afc296c95b86443a499836abfcc35858133e80aae9c8f00349ab4010a21",
+				"dweb:/ipfs/QmQDmJZxNQD4nVJCBLmrw5a3qYLDw2speLj27uMtVFUF59"
 			]
 		}
 	},

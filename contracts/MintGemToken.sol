@@ -8,8 +8,16 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract MintGemToken is ERC721Enumerable, Ownable {
+    uint constant public MAX_TOKEN_COUNT = 2;
+    uint constant public TOKEN_RANK_LENGTH = 4;
+    uint constant public TOKEN_TYPE_LENGTH = 4;
+
 
     string public metadataURI;
+
+    
+    // 10^18 Peb = 1 Klay (klay 최소단위 : peb)
+    uint public gemTokenPrice = 1000000000000000000;
 
     constructor(string memory _name, string memory _symbol, string memory _metadataURI) ERC721(_name, _symbol) {
         metadataURI = _metadataURI;
@@ -30,7 +38,14 @@ contract MintGemToken is ERC721Enumerable, Ownable {
     }
 
 
-    function mintGemToken() public  {
+    function mintGemToken() public payable {
+
+        require(gemTokenPrice <= msg.value, "Not enough Klay!!!");
+
+        //최대 발행량 제한
+        //require(MAX_TOKEN_COUNT > totalSupply(), "No more minting is possible.");
+
+
         uint tokenId = totalSupply() + 1;
 
         GemTokenData memory randomTokenData = randomGenerator(msg.sender, tokenId);
@@ -47,6 +62,8 @@ contract MintGemToken is ERC721Enumerable, Ownable {
 
         GemTokenData memory randomTokenData;
 
+
+        // %에 따른 랜덤 확률표
          if (randomNum < 5) {
             if (randomNum == 1) {
                 randomTokenData.gemTokenRank = 4;
@@ -104,6 +121,7 @@ contract MintGemToken is ERC721Enumerable, Ownable {
                 randomTokenData.gemTokenType = 4;
             }
         }
+        return  randomTokenData;
     }
 
 }
