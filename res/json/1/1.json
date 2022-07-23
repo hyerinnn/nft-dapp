@@ -1,7 +1,7 @@
 {
-    "description": "chr test 1 1",  
-    "image": "https://gateway.pinata.cloud/ipfs/QmaBoPnMuQGtjeUvUdMbTpGY8Hs2Nt2a2FFvqAGEo8HZtA/1/1.png", 
-    "name": "chr 1 1",
+    "name": "chr_1_image1",
+    "description": "This is chr_1_image1",  
+    "image": "https://gateway.pinata.cloud/ipfs/QmPsTfMfuT9QLHWGyPMXT2KVQep1S7a2vDmi9XHhc19KSn/1/1.png", 
     "attributes": [
         {
             "trait_type" : "Rank",

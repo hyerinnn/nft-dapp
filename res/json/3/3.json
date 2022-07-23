@@ -1,0 +1,16 @@
+{
+    "name": "chr_3_image3",
+    "description": "This is chr_3_image3",  
+    "image": "https://gateway.pinata.cloud/ipfs/QmPsTfMfuT9QLHWGyPMXT2KVQep1S7a2vDmi9XHhc19KSn/3/3.png", 
+    "attributes": [
+        {
+            "trait_type" : "Rank",
+            "value": 3
+        },
+        {
+            "trait_type" : "Type",
+            "value": 3
+        }
+
+    ]
+  }

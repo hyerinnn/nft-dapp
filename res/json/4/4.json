@@ -1,0 +1,16 @@
+{
+    "name": "chr_1_image4",
+    "description": "This is chr_1_image4",  
+    "image": "https://gateway.pinata.cloud/ipfs/QmPsTfMfuT9QLHWGyPMXT2KVQep1S7a2vDmi9XHhc19KSn/1/4.png", 
+    "attributes": [
+        {
+            "trait_type" : "Rank",
+            "value": 1
+        },
+        {
+            "trait_type" : "Type",
+            "value": 4
+        }
+
+    ]
+  }
